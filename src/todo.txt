@@ -4,4 +4,4 @@
 
 
 Bug List:
-start the game them press left arrow key the game closes [none critical]
+start the game then press left arrow key the game closes [none critical]
