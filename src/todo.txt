@@ -1,0 +1,7 @@
+1) add sound effect support for when snake eats the apple
+2) add themes to the game
+3) fix potential bugs
+
+
+Bug List:
+start the game them press left arrow key the game closes [none critical]
