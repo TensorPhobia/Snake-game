@@ -25,7 +25,7 @@ void Init()
 
 void GameLoop()
 {
-    controls user_input, old_user_input = NO_INPUT;
+    controls user_input, illegal_move, old_user_input = NO_INPUT;
     unsigned int score = 0;
     mvprintw(0,3,"[Score: %d]",score);
     gTime t = gTimeCreate();
@@ -41,6 +41,14 @@ void GameLoop()
         cBufferInsert(&snake, p);
         mvaddch(p.y, p.x, CHAR_SNAKE_BODY);
     }
+    
+    /*---[Begin Special Implementation]---
+    since snake position is scripted and depend on level design 
+    if added the feature added, the programmer needs to set manually
+    illegal key press to prevent collision issues.
+    ---[End Special Implementation]--- */
+
+    illegal_move = LEFT;
 
     while (true)
     {
@@ -55,21 +63,27 @@ void GameLoop()
                 user_input = old_user_input;
             }
 
-            if (user_input == UP && old_user_input != DOWN)
+            if(user_input == illegal_move){
+                continue;
+            }else if (user_input == UP && old_user_input != DOWN)
             {
                 old_user_input = UP;
+                illegal_move = NO_INPUT;
             }
             else if (user_input == DOWN && old_user_input != UP)
             {
                 old_user_input = DOWN;
+                illegal_move = NO_INPUT;
             }
             else if (user_input == LEFT && old_user_input != RIGHT)
             {
                 old_user_input = LEFT;
+                illegal_move = NO_INPUT;
             }
             else if (user_input == RIGHT && old_user_input != LEFT)
             {
                 old_user_input = RIGHT;
+                illegal_move = NO_INPUT;
             }
 
 
