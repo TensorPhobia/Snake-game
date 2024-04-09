@@ -6,7 +6,7 @@
 ---
 Players navigate the snake using arrow keys or specified controls, guiding it to consume food items randomly placed within the game area. As the snake consumes food, it grows longer, making navigation more challenging. The game ends if the snake collides with itself or the boundaries, and players can see their score.
 
-## 🕹️ Controls
+## 🕹️ Controls:
 ---
 - Use the arrow keys to control the snake's movement:
   - **Up Arrow**: Move the snake upwards.
@@ -16,4 +16,4 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
   
 - For changes to controls, modify the controls enum inside `src/header files/control_module.h`.
 
-<img src="controls.png" alt="control customization code" width="500"/>
+<img src="controls.png" alt="control customization code" width="400"/>
