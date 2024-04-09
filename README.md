@@ -26,11 +26,8 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 
 - **Theme Customization**: Want to add your own theme? No problem! Simply adjust the source files in `src/source files/theme_module.c` to append your personalized theme to the game.
 
-<p align="middle">
+<p align="center">
   <img src="theme1.png" alt="snake game auto detect themes" width="20%" />
-  <figure width="50%" align="middle">
-    <img src="theme3.png" alt="snake game auto detect themes" /> 
-      <figcaption>Snake Game adjust automatically to vs code themes</figcaption>
-  </figure>
+  <img src="theme3.png" alt="snake game auto detect themes" width="50%" />
   <img src="theme2.png" alt="snake game auto detect themes" width="20%" />
 </p>
