@@ -20,6 +20,8 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 
 ## ✨ Features:
 
+- **FPS Cap Customization**: Take control of the game's speed by adjusting the frames per second (FPS) cap. Ideal for larger monitors where quicker snake movement enhances gameplay.
+
 - **Terminal Theme Adjustment**: The game adjusts to your terminal theme, ensuring it matches your taste straight on without any additional configurations.
 
 - **Customization via Flags**: Customize your gaming experience by passing flags to adjust various settings according to your preferences.
