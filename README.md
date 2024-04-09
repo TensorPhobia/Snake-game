@@ -33,3 +33,22 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
   <img src="theme3.png" alt="snake game auto detect themes" width="50%" />
   <img src="theme2.png" alt="snake game auto detect themes" width="20%" />
 </p>
+
+## 📦 Run/Compile:
+
+To compile the Snake Game, you'll need any C compiler with the standard library and ncurses library installed. Follow these steps:
+
+- **Compile from Source**:
+   - Ensure you have a C compiler installed on your system.
+   - Make sure the ncurses library is also installed. You can typically install it using your package manager.
+   - Navigate to the project directory and run `make` to build the project.
+
+- **Alternatively**, if you prefer not to compile the game yourself, you can directly run the precompiled binary located in the `release` folder.
+
+## ❤️‍🔥 Acknowledgment:
+
+Special thanks to [@haydraa](https://github.com/haydraa 'haydraa profile') for dedicating time and effort to review the code, providing valuable feedback, and contributing to the improvement of the Snake Game.
+
+<br/>
+
+<p align="center">Made with ❤️ in Tunisia 🇹🇳</p>
