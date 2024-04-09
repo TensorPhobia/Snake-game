@@ -17,3 +17,12 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 - For changes to controls, modify the controls enum inside `src/header files/control_module.h`.
 
 <img src="controls.png" alt="control customization code" width="400"/>
+
+## ✨ Features:
+
+- **Terminal Theme Adjustment**: The game adjusts to your terminal theme, ensuring it matches your taste straight on without any additional configurations.
+
+- **Customization via Flags**: Customize your gaming experience by passing flags to adjust various settings according to your preferences.
+
+- **Theme Customization**: Want to add your own theme? No problem! Simply adjust the source files in `src/source files/theme_module.c` to append your personalized theme to the game.
+
