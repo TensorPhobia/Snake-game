@@ -20,13 +20,13 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 
 ## ✨ Features:
 
-- **FPS Cap Customization**: Take control of the game's speed by adjusting the frames per second (FPS) cap. Ideal for larger monitors where quicker snake movement enhances gameplay.
+- **FPS Cap Customization**: Take control of the game's speed by adjusting the frames per second (FPS) cap. Ideal for larger monitors where quicker snake movement enhances gameplay, Simply adjust the source file in `src/header files/settings_module.h`.
 
 - **Terminal Theme Adjustment**: The game adjusts to your terminal theme, ensuring it matches your taste straight on without any additional configurations.
 
 - **Customization via Flags**: Customize your gaming experience by passing flags to adjust various settings according to your preferences.
 
-- **Theme Customization**: Want to add your own theme? No problem! Simply adjust the source files in `src/source files/theme_module.c` to append your personalized theme to the game.
+- **Theme Customization**: Want to add your own theme? No problem! Simply adjust the source file in `src/source files/theme_module.c` to append your personalized theme to the game.
 
 <p align="center">
   <img src="theme1.png" alt="snake game auto detect themes" width="20%" />
