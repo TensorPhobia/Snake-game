@@ -1,6 +1,6 @@
 # Snakes 🐍
 
-![snakes logo](https://placehold.co/250x250)
+![snakes logo](logo.gif)
 
 ## Table of content:
 ---
