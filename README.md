@@ -36,15 +36,36 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 
 ## 📦 Run/Compile:
 
-To compile the Snake Game, you'll need any C compiler with the standard library and ncurses library installed. Follow these steps:
+To compile and run the Snake Game, you'll need any C compiler with the standard library and ncurses library installed. Follow these steps:
 
-- **Compile from Source**:
+1. **Compile from Source**:
    - Ensure you have a C compiler installed on your system.
    - Make sure the ncurses library is also installed. You can typically install it using your package manager.
    - Navigate to the project directory and run `make` to build the project.
 
-- **Alternatively**, if you prefer not to compile the game yourself, you can directly run the precompiled binary located in the `release` folder.
+2. **Run the Compiled Binary**:
+   - After successful compilation, execute the compiled binary by entering:
+     ```bash
+     ./snake.out
+     ```
 
+3. **Run the Precompiled Binary**:
+   - If you prefer not to compile the game yourself, follow these steps:
+
+     a. Navigate to the `release` folder:
+        ```bash
+        cd release
+        ```
+
+     b. Run the precompiled binary:
+        ```bash
+        ./snake.out
+        ```
+
+     Remember to grant necessary permissions to the binary if needed:
+     ```bash
+     chmod +x snake.out
+     ```
 ## ❤️‍🔥 Acknowledgment:
 
 Special thanks to [@haydraa](https://github.com/haydraa 'haydraa profile') for dedicating time and effort to review the code, providing valuable feedback, and contributing to the improvement of the Snake Game.
