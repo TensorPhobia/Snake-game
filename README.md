@@ -28,6 +28,9 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 
 <p align="middle">
   <img src="theme1.png" alt="snake game auto detect themes" width="20%" />
-  <img src="theme3.png" alt="snake game auto detect themes" width="50%" /> 
+  <figure width="50%" align="middle">
+    <img src="theme3.png" alt="snake game auto detect themes" /> 
+      <figcaption>Snake Game adjust automatically to vs code themes</figcaption>
+  </figure>
   <img src="theme2.png" alt="snake game auto detect themes" width="20%" />
 </p>
