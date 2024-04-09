@@ -15,3 +15,5 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
   - **Right Arrow**: Move the snake to the right.
   
 - For changes to controls, modify the controls enum inside `src/header files/control_module.h`.
+
+<img src="controls.png" alt="control customization code" width="500"/>
