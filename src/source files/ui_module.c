@@ -32,3 +32,13 @@ void UIPaint()
 {
     refresh();
 }
+
+void UIEnableColor()
+{
+    use_default_colors();     //FIX TESTING   
+    start_color();
+}
+
+void UIDisableColor(){
+    //placeHolder
+}

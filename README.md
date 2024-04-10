@@ -1,6 +1,6 @@
 # Snakes 🐍
 
-![snakes logo](logo.gif)
+![snakes logo](assets/logo.gif)
 
 ## 🎮 How to Play:
 
@@ -16,7 +16,7 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
   
 - For changes to controls, modify the controls enum inside `src/header files/control_module.h`.
 
-<img src="controls.png" alt="control customization code" width="400"/>
+<img src="assets/controls.png" alt="control customization code" width="400"/>
 
 ## ✨ Features:
 
@@ -29,9 +29,9 @@ Players navigate the snake using arrow keys or specified controls, guiding it to
 - **Theme Customization**: Want to add your own theme? No problem! Simply adjust the source file in `src/source files/theme_module.c` to append your personalized theme to the game.
 
 <p align="center">
-  <img src="theme1.png" alt="snake game auto detect themes" width="20%" />
-  <img src="theme3.png" alt="snake game auto detect themes" width="50%" />
-  <img src="theme2.png" alt="snake game auto detect themes" width="20%" />
+  <img src="assets/theme1.png" alt="snake game auto detect themes" width="20%" />
+  <img src="assets/theme3.png" alt="snake game auto detect themes" width="50%" />
+  <img src="assets/theme2.png" alt="snake game auto detect themes" width="20%" />
 </p>
 
 ## 📦 Run/Compile:

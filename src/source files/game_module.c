@@ -15,26 +15,38 @@
 #include "../header files/game dependent/food_module.h"
 #include "../header files/game dependent/snake_module.h"
 #include "../header files/window_module.h"
+#include "../header files/theme_module.h"
+#include "../header files/game dependent/score_module.h"
 
 void Init()
 {
     srand(time(NULL));
     UICreate();
+    UIEnableColor();
+    EXPEND_COLOR_DEFINITION(regular);
+    ENABLE_BOUNDARY_COLOR();
     UIHighlightBorder();
+    DISABLE_BOUNDARY_COLOR();
+
+    COLOR_BACKGROUND();
 }
 
 void GameLoop()
 {
-    controls user_input, illegal_move, old_user_input = NO_INPUT;
+    window w = windowCreate("Snakes", "TensorPhobia", 0.5);
+    controls user_input,illegal_move,old_user_input = NO_INPUT;
     unsigned int score = 0;
-    mvprintw(0,3,"[Score: %d]",score);
+    displayScore(score);
     gTime t = gTimeCreate();
     point p = pointCreate(5, 5);
-    window w = windowCreate("Snakes", "TensorPhobia", 0.5);
     point food = foodRandomizePosition(&w);
+
+    ENABLE_FOOD_COLOR();
     mvaddch(food.y, food.x, CHAR_FOOD);
+
     cBuffer snake = cBufferCreate(SNAKE_DEFAULT_SIZE);
 
+    ENABLE_SNAKE_COLOR();
     for (int i = 0; i < SNAKE_DEFAULT_SIZE; i++)
     {
         p.x = i + BOUNDARY_SPAWN_MARGIN;
@@ -87,7 +99,6 @@ void GameLoop()
             }
 
 
-
             if (old_user_input == UP)
             {
                 pointMoveY(&p, -SNAKE_DEFAULT_VELOCITY);
@@ -117,11 +128,11 @@ void GameLoop()
                 cBufferExpend(&snake);
                 mvaddch(food.y, food.x, ' ');
                 food = foodRandomizePosition(&w);
-                mvprintw(0,5 + BOUNDARY_LEFT_MARGIN ,"[Score: %d]",score);
-
+                displayScore(score);
+                ENABLE_FOOD_COLOR();
+                mvaddch(food.y, food.x, CHAR_FOOD);
             }
 
-            mvaddch(food.y, food.x, CHAR_FOOD);
             cBufferInsert(&snake, p);
 
             UIPaint();
@@ -132,5 +143,6 @@ void GameLoop()
 
 void Exit()
 {
+    UIDisableColor();
     UIDestroy();
 }

@@ -1,5 +1,4 @@
-1) add themes to the game
-2) add sound effect support for when snake eats the apple
+1) add sound effect support for when snake eats the apple
 
 Bug List:
 Ncurses read buffer can be manipulated to get stuck if you span same key multiple times because read pointer is slower than write pointer [none critical]

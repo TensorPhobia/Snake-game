@@ -1,6 +1,7 @@
-#include "../../header files/game dependent/snake_module.h"
-#include <stdbool.h>
 #include <ncurses.h>
+#include <stdbool.h>
+#include "../../header files/game dependent/snake_module.h"
+#include "../../header files/theme_module.h"
 
 cBuffer cBufferCreate(unsigned int size)
 {
@@ -29,6 +30,7 @@ void cBufferInsert(cBuffer *cBuff, point p)
     {
         mvaddch(cBuff->buff[cBuff->tail].y, cBuff->buff[cBuff->tail].x, ' ');
         cBuff->buff[cBuff->tail] = p;
+        ENABLE_SNAKE_COLOR();
         mvaddch(cBuff->buff[cBuff->tail].y, cBuff->buff[cBuff->tail].x, CHAR_SNAKE_BODY);
         cBuff->tail++;
         cBuff->tail %= cBuff->head;

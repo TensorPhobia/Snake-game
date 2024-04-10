@@ -1,6 +1,6 @@
 #pragma once
 
-#define FRAME_RATE 10.0
+#define FRAME_RATE 15.0
 #define MAX_SCORE 9999 /*will set also the size of the circular buffer*/
 #define CHAR_SNAKE_BODY '#'
 #define CHAR_FOOD '*'
